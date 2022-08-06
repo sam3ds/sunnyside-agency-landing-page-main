@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Barlow', sans-serif;
 }
 
 header {
@@ -16,24 +17,40 @@ header .bg {
     width: 100%;
 }
 
-header h1 {
-    position: absolute;
-    left: 25%;
-    right: 25%;
-    top: 250%;
-    text-align: center;
-    font-size: 5rem;
+header .bg-mobile {
+    display: none;
 }
+
+header .text h1 {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.7rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5.5rem;
+    text-align: center;
+}
+
+header .text {
+    position: absolute;
+    left: 0;
+    top: 120%;
+    width: 100%;
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     position: relative;
+    padding:  2.5rem;
 }
 
-.logo {
-    margin: 0.5rem;
+header nav .logo img {
+    width: 170px;
 }
 
 .navbar-links ul {
@@ -42,21 +59,38 @@ header h1 {
     display: flex;
 }
 
+
+
 .navbar-links li {
     list-style: none;
 }
 
+.navbar .navbar-links .contact {
+    background-color: #fff;
+    color: black;
+    border-radius: 30px;
+    margin-left: 1.5rem;
+}
+
+
 .navbar-links li a {
     text-decoration: none;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 1.7rem;
     display: block;
+    font-size: 1.2rem;
 }
 
 .navbar-links li:hover > a {
-    color: yellow;
+    opacity: 0.8;
 }
 
+.navbar .navbar-links .contact:hover {
+    background-color: rgba(255,255,255,0.3);
+    color: #fff;
+    border-radius: 30px;
+    margin-left: 1.5rem;
+}
 
 
 /* Toggle Button */
@@ -64,13 +98,13 @@ header h1 {
 
 .toggle-button {
     position: absolute;
-    top: 0.75rem;
-    right: 1rem;
+    top: 2.8rem;
+    right: 2rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 30px;
-    height: 21px;
+    width: 35px;
+    height: 25px;
     z-index: 99;
 }
 
@@ -82,6 +116,7 @@ header h1 {
 }
 
 @media (max-width:600px) {
+    
     .toggle-button {
         display: flex;
     }
@@ -91,21 +126,23 @@ header h1 {
 
     .navbar-links.active {
         display: flex;
+        z-index: 99;
     }
 
     .navbar-links ul {
-        background-color: red;
+        background-color: #fff;
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 90px;
-        left: 7.5%;
-        right: 7.5%;
+        top: 8rem;
+        left: 8%;
+        right: 8%;
+        padding: 1.8rem;
     }
 
     .navbar-links ul::before {
         content: '';
-        background-color: red;
+        background-color: #fff;
         height: 35px;
         width: 30px;
         position: absolute;
@@ -113,7 +150,33 @@ header h1 {
         top: 0;
         right: 0;
     }
-    
+
+    .navbar .navbar-links .contact {
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .navbar-links li a {
+        color: hsl(213, 9%, 39%);
+        margin-bottom: 0.5rem;
+    }
+
+     
+    header .bg {
+        display: none;
+    }
+
+    header .bg-mobile {
+        display: block;
+        width: 100%;
+        position: absolute;
+    }
+    header .text h1 {
+        font-size: 2.3rem;
+        margin-bottom: 3rem;
+    }
 }
 
 
