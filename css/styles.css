@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.logo {
+    margin: 0.5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover > a {
+    color: yellow;
+}
+
+
+
+/* Toggle Button */
+
+
+.toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    z-index: 99;
+}
+
+.toggle-button .bar {
+    height:3px ;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width:600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links ul {
+        background-color: red;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 90px;
+        left: 7.5%;
+        right: 7.5%;
+    }
+
+    .navbar-links ul::before {
+        content: '';
+        background-color: red;
+        height: 35px;
+        width: 30px;
+        position: absolute;
+        transform: skewY(-50deg);
+        top: 0;
+        right: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
