@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -117,21 +120,21 @@ header nav .logo img {
     padding: 6rem 9rem;
 }
 
-.transform .section-text h1 {
+.section-text h1 {
     font-family: 'Fraunces', serif;
     font-size: 2.6rem;
     font-weight: 900;
     color: hsl(212, 27%, 19%);
 }
 
-.transform .section-text p {
+.section-text p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: hsl(232, 10%, 55%);
     margin-bottom: 1.5rem;
 }
 
-.transform .section-text h4 a {
+.section-text h4 a {
     text-decoration: none;
     text-align: left;
     font-family: 'Fraunces', serif;
@@ -142,7 +145,7 @@ header nav .logo img {
     padding-left: 0.5rem;
 }
 
-h4::after {
+.transform .section-text h4::after {
     display: block;
     content: "";
     height: 0.7rem;
@@ -159,7 +162,45 @@ h4::after {
     opacity: 1;
 }
 
+/* Section Two Stand Out */
 
+.stand-out {
+    display: flex;
+    flex-direction: row;
+}
+.stand-out .section-image {
+    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 44.66%;
+}
+
+.stand-out .section-text {
+    width: calc(100% - 16rem);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 8rem;
+}
+
+.stand-out .section-text h4::after {
+    display: block;
+    content: "";
+    height: 0.7rem;
+    width: 8.5rem;
+    border-radius: 3px;
+    background-color: hsl(7, 99%, 70%);
+    opacity: 0.4;
+    position: relative;
+    top: -8px;
+    z-index: -1;
+}
+
+.stand-out .section-text h4:hover::after {
+    opacity: 1;
+}
 
 /* Toggle Button */
 
@@ -250,7 +291,8 @@ h4::after {
     /* Section One Transform */
 
 
-    .transform {
+    .transform,
+    .stand-out {
         flex-direction: column;
     }
 
@@ -281,6 +323,12 @@ h4::after {
         margin-bottom: 1.5rem;
     }
 
+    /* Section Two Stand Out */
+
+    .stand-out .section-image {
+        background-image: url(../images/desktop/image-stand-out.jpg);
+        padding-top: 83.2%;
+    }
 
     
 }
