@@ -202,6 +202,58 @@ header nav .logo img {
     opacity: 1;
 }
 
+/* Section Three Photos */
+
+.photos {
+    display: flex;
+}
+
+.photos .photography-image,
+.photos .graphic-image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 41.66%;
+}
+
+.photos .graphic-image {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+}
+.photos .photography-image {
+    background-image: url(../images/desktop/image-photography.jpg);
+}
+
+.photos .text-area {
+    position: absolute;
+    bottom: 0;
+    padding: 0 12rem 4rem;
+    text-align: center;
+}
+
+.photos .text-area h2 {
+    text-transform: capitalize;
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.photos .text-area p {
+    font-size: 1rem;
+}
+
+.photos .graphic-image .text-area {
+    color: hsl(167, 40%, 24%);
+}
+
+.photos .photography-image .text-area {
+    color: hsl(198, 62%, 26%);
+}
+
+
 /* Toggle Button */
 
 
@@ -303,19 +355,21 @@ header nav .logo img {
         padding-top: 83.2%;
     }    
 
-    .transform .section-text {
+    .transform .section-text,
+    .stand-out .section-text {
         width: 100%;
         padding: 2rem;
         align-items: center;
-        
     }
 
+    .stand-out .section-text h1,
     .transform .section-text h1 {
         font-size: 1.9rem;
         text-align: center;
         margin-bottom: 2rem;
     }
     
+    .stand-out .section-text p,
     .transform .section-text p {
         text-align: center;
         line-height: 1.6;
@@ -332,7 +386,6 @@ header nav .logo img {
 
     
 }
-
 
 
 
