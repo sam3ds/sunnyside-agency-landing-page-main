@@ -10,16 +10,15 @@ body {
 
 header {
     position: relative;
-}
-
-header .bg {
-    position: absolute;
+    background-image: url(../images/desktop/image-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
+    height: 0;
+    padding-top: 55.55% /* (img-height / img-width * container-width) */;
 }
 
-header .bg-mobile {
-    display: none;
-}
+
 
 header .text h1 {
     font-family: 'Fraunces', serif;
@@ -35,7 +34,7 @@ header .text h1 {
 header .text {
     position: absolute;
     left: 0;
-    top: 120%;
+    top: 22%;
     width: 100%;
     text-align: center;
 }
@@ -45,8 +44,11 @@ header .text {
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    position: relative;
+    position: absolute;
     padding:  2.5rem;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 header nav .logo img {
@@ -92,6 +94,24 @@ header nav .logo img {
     margin-left: 1.5rem;
 }
 
+/* Section One Transform */
+.transform {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.transform .section-image {
+    background-image: url(../images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+    padding-top: 41.66% ;
+}
+
+.transform .section-text {
+    width: 100%;
+}
 
 /* Toggle Button */
 
@@ -114,6 +134,8 @@ header nav .logo img {
     background-color: white;
     border-radius: 10px;
 }
+
+
 
 @media (max-width:600px) {
     
@@ -163,16 +185,15 @@ header nav .logo img {
         margin-bottom: 0.5rem;
     }
 
+    header {
+        background-image: url(../images/mobile/image-header.jpg);
+        padding-top: 143.46% /* (img-height / img-width * container-width) */;
+    }
      
-    header .bg {
-        display: none;
+    header .text {
+        top: 9rem;
     }
 
-    header .bg-mobile {
-        display: block;
-        width: 100%;
-        position: absolute;
-    }
     header .text h1 {
         font-size: 2.3rem;
         margin-bottom: 3rem;
