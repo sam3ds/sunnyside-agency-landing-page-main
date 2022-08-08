@@ -322,6 +322,26 @@ header nav .logo img {
     display: none;
 }
 
+/* Footer */
+
+footer {
+    background-color: rgb(144, 212, 197);
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 15rem;
+}
+
+footer .footer-logo {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: hsl(167, 40%, 24%);
+    opacity: 0.85;
+}
+
+
+
+
 /* Toggle Button */
 
 
