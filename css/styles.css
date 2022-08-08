@@ -305,6 +305,23 @@ header nav .logo img {
     margin-bottom: 10rem;
 }
 
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gallery > * {
+    width: 25%;
+}
+
+.gallery img.mobile {
+    display: none;
+}
+
 /* Toggle Button */
 
 
@@ -454,7 +471,50 @@ header nav .logo img {
         padding: 0 2rem 3rem;
     }
 
+    /* Testimonials Section */
+
+    .testimonials h3 {
+        margin: 4.5rem 1.5rem 5rem;
+        font-size: 1.2rem;
+    }
+
+
+    .testimonials .container {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
     
+    .testimonials .container .card img {
+        margin-bottom: 1.5rem;
+    }
+
+    .testimonials .container .card p {
+        margin-bottom: 2.5rem;
+    }
+
+    .testimonials .container .card h5 {
+        margin-bottom: 4.5rem;
+    }
+
+    /* Gallery Section */
+
+    .gallery img.mobile {
+        display: block;
+    }
+
+    .gallery img.desktop {
+        display: none;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+    
+    .gallery > * {
+        width: 50%;
+    }
+
+
 }
 
 
