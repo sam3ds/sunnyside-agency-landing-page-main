@@ -403,6 +403,8 @@ footer ul li:hover {
     background-color: white;
     border-radius: 10px;
 }
+
+
 @media (max-width: 1030px) {
     .transform .section-text {
         width: calc(100% - 8%);
@@ -454,6 +456,12 @@ footer ul li:hover {
     .photos .text-area p {
         font-size: 90%;
         line-height: 1.5;
+    }
+
+    .testimonials .container {
+        display: flex;
+        flex-direction: row;
+        padding: 0 5%;
     }
 
 }
@@ -582,6 +590,8 @@ footer ul li:hover {
     .photos .text-area {
         padding: 0 2rem 3rem;
     }
+
+
 
     /* Testimonials Section */
 
